@@ -1,0 +1,30 @@
+{
+  "name": "scrap-tjsp",
+  "maintainers": [
+    "Sérgio Saquetim <megothss@gmail.com>"
+  ],
+  "description": "Um scrapper simples para os acórdãos do TJSP de SP",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "axios-cookiejar-support": "^1.0.0",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.29.1",
+    "ora": "^5.1.0",
+    "prompt": "^1.0.0",
+    "qs": "^6.9.4",
+    "tough-cookie": "^4.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
